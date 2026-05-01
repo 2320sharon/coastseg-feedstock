@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -24,7 +24,7 @@ requirements:
     - onnxruntime
     - pytz
     - netcdf4
-    - numpy ==1.23.5
+    - numpy >=1.26
     - protobuf
     - python >={{ python_min }}
     - gdal >=3.8.4
