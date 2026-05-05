@@ -17,14 +17,14 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=61.0
     - pip
     - hatchling
   run:
+    - python >={{ python_min }},<3.13
     - onnxruntime
     - pytz
     - netcdf4
-    - numpy ==1.23.5
+    - numpy
     - protobuf
     - python >={{ python_min }}
     - gdal >=3.8.4
@@ -36,8 +36,6 @@ requirements:
     - aiohttp
     - chardet
     - dask-core
-    - doodleverse-utils >=0.0.35
-    - earthengine-api >=0.1.388
     - geojson
     - geopandas
     - jupyterlab >=3.0.0
