@@ -1,6 +1,6 @@
 {% set name = "CoastSeg" %}
 {% set version = "2.0.2" %}
-{% set python_min = "3.11" %}
+{% set python_min = "3.10" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -20,16 +20,13 @@ requirements:
     - pip
     - hatchling
   run:
-    - python >={{ python_min }},<3.13
+    - python >={{ python_min }}
     - onnxruntime
     - pytz
     - netcdf4
     - numpy
     - protobuf
-    - python >={{ python_min }}
-    - gdal >=3.8.4
-    - h5py
-    - pytmd <2.2.0
+    - gdal
     - coastsat-package >=0.3.3
     - pooch
     - area
