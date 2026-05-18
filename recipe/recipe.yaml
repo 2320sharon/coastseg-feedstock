@@ -13,7 +13,7 @@ source:
   sha256: f307547bfa9b4a16cdabdf3aff59951a0f0644fe6815e3c4803651d941f7672b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -33,7 +33,7 @@ requirements:
     - geopandas-base
     - h5py
     - jupyterlab >=3.0.0
-    - leafmap
+    - leafmap >=0.45.0
     - nest-asyncio
     - pooch
     - protobuf
