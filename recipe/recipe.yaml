@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 2.0.4
+  version: 2.1.0
   python_min: '3.10'
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/C/CoastSeg/coastseg-${{ version }}.tar.gz
-  sha256: 369d4b69bc13f2ac8873694e189a2345d95c10dd75a2a36000a790d6cb867738
+  sha256: 257acd63429c3b19f4eb694b1732675b658cdc16cd875e925e3d854ac095eed6
 
 build:
   number: 0
@@ -36,11 +36,12 @@ requirements:
     - nest-asyncio
     - pooch
     - protobuf
-    - pytmd <2.2.0
+    - pytmd >=3.0.9,<4
     - xarray
     - pytz
     - netcdf4
     - geopandas
+    - timescale >=0.1.1
 tests:
   - python:
       imports:
