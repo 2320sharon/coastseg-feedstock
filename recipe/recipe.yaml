@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 2.1.0
+  version: 2.1.1
 
 package:
   name: coastseg
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/C/CoastSeg/coastseg-${{ version }}.tar.gz
-  sha256: 257acd63429c3b19f4eb694b1732675b658cdc16cd875e925e3d854ac095eed6
+  sha256: 1d078cafc5b3dbb3145a1fa44f5b3beb4c2b1332be5632babe4edc63d88cb536
 
 build:
   number: 0
